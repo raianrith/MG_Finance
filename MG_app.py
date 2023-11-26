@@ -94,7 +94,7 @@ def all_transactions():
     st.title('All Recorded Transactions')
     
     try:
-        expenses_df = pd.read_csv('expenses.csv', names=['Date', 'Store', 'Category', 'Amount', 'Notes'])
+        expenses_df = pd.read_csv('expenses.csv', names=['Date', 'Store', 'Category', 'Amount', 'Notes', 'Card Used'])
         st.write("Here is a table of all recorded transactions:")
         st.write(expenses_df)
 
